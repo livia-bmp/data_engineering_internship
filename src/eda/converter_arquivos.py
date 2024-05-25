@@ -2,8 +2,8 @@ import os
 import glob
 import pandas as pd
 
-input_folder = r"C:\\Users\\Usuario\\OneDrive\\Área de Trabalho\\data_engineering_internship\\eda"
-output_folder = r"C:\\Users\\Usuario\\OneDrive\\Área de Trabalho\\data_engineering_internship\\eda"
+input_folder = r"C:\\Users\\Usuario\\OneDrive\\Área de Trabalho\\data_engineering_internship\\src\\arquivos"
+output_folder = r"C:\\Users\\Usuario\\OneDrive\\Área de Trabalho\\data_engineering_internship\\src\\arquivos"
 #path = os.getcwd() 
 
 # Define o tipo de arquivo de entrada e saída que deseja converter
@@ -11,7 +11,7 @@ input_extension = '*.xlsx'
 output_extension = '.csv'
 
 # Lista todos os arquivos de entrada
-input_folder = os.path.join(os.path.expanduser('~'),'OneDrive\Área de Trabalho\data_engineering_internship\eda')
+input_folder = os.path.join(os.path.expanduser('~'),'OneDrive\Área de Trabalho\data_engineering_internship\src\arquivos')
 input_files = glob.glob(os.path.join(input_folder, '*.xlsx'))
 
 # Cria o diretório de saída se não existir
@@ -20,7 +20,7 @@ os.makedirs(output_folder, exist_ok=True)
 for file in input_files:
     # Lê todas as abas do arquivo xlsx com a biblioteca pandas
     xlsx = pd.ExcelFile(file)
-    
+        
     # Inicializa um DataFrame vazio para armazenar os dados concatenados
     all_data = pd.DataFrame()
     

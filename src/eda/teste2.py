@@ -3,8 +3,8 @@ import glob
 import pandas as pd
 
 # Definindo os diretórios de entrada e saída
-input_folder = r"C:\Users\Usuario\OneDrive\Área_de_Trabalho\data_engineering_internship\eda"
-output_folder = r"C:\Users\Usuario\OneDrive\Área_de_Trabalho\data_engineering_internship\eda"
+input_folder = r"C:\Users\Usuario\OneDrive\Área de Trabalho\data_engineering_internship\src\arquivos"
+output_folder = r"C:\Users\Usuario\OneDrive\Área de Trabalho\data_engineering_internship\src\arquivos"
 
 # Define o tipo de arquivo de entrada e saída que deseja converter
 input_extension = '*.xlsx'
@@ -13,7 +13,7 @@ output_extension = '.csv'
 # Lista todos os arquivos de entrada
 #input_files = glob.glob(os.path.join(input_folder, input_extension))
 path = os.getcwd() 
-input_folder = os.path.join(os.path.expanduser('~'),'Área de Trabalho\data_engineering_internship\eda')
+input_folder = os.path.join(os.path.expanduser('~'),'Área de Trabalho\data_engineering_internship\src\arquivos')
 input_files = glob.glob(os.path.join(input_folder, '*.xlsx'))
 
 # Cria o diretório de saída se não existir
