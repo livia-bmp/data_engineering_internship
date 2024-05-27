@@ -27,7 +27,7 @@ Instale as dependências necessárias usando o comando:
    * `diretorio_entrada`: Caminho para a pasta onde os arquivos XLSX serão baixados.
    * `diretorio_saida`: Caminho para a pasta onde os arquivos CSV serão salvos.
    # Troque também as funções: 
-   * `download_dir`: Edite no arquivo `extracao_dados.py ` é equivalente ao `diretorio_entrada`
+   * `diretorio_entrada`: Edite no arquivo `extracao_dados.py ` é equivalente ao `diretorio_entrada`
    * `diretorio`: Edite no arquivo `tratamento_dados.py ` é equivalente ao `diretorio_entrada`
    * `input_dir`: Edite no arquivo `converter_arquivos.py ` é equivalente ao `diretorio_entrada`
    * `output_dir`: Edite no arquivo `converter_arquivos.py ` é equivalente ao `diretorio_saida`
@@ -67,6 +67,10 @@ Instale as dependências necessárias usando o comando:
 * Você pode modificar o script para baixar dados de outras pesquisas, ajustando os XPaths dos elementos do site do IBGE.
 * Para realizar análises mais avançadas, você pode utilizar as bibliotecas de visualização de dados como Matplotlib e Seaborn.
 * Havia configurado um arquivo config.py apenas importar e rodar os **diretorio_saida** e **diretorio_entrada**, porem o codigo nao interpretou isso muito bem e removi para as configurações que estavam antes por falta de tempo habil para poder unificar tudo nesse momento
+
+### CASO O MAIN NÃO FUNCIONE DE PRIMEIRA:
+   * RODAR POR PRIMEIRO ARQUIVO SECUNDÁRIO planoB.py seguir as mesmas instruções que para o arquivo extracao_dados.py
+   * CLICAR PARA RODAR O **MAIN** NOVAMENTE
 
 ### Contribuições
 

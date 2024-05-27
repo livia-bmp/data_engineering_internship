@@ -12,6 +12,9 @@ def converter_xlsx_para_csv(input_dir, output_dir):
         input_dir (str): Caminho do diretório de entrada com os arquivos .xlsx.
         output_dir (str): Caminho do diretório de saída para os arquivos .csv.
     """
+        # Criar o diretório de saída se ele não existir
+    os.makedirs(output_dir, exist_ok=True)
+    
     # Iterar por todos os arquivos .xlsx no diretório de entrada
     for filename in os.listdir(input_dir):
         if filename.endswith(".xlsx"):
@@ -43,7 +46,7 @@ def converter_xlsx_para_csv(input_dir, output_dir):
             print(f"Arquivo {filename} convertido para CSV e salvo em {output_filepath}")
 
 # Diretorios
-input_dir = "C:\\Users\\Usuario\\Downloads\\data_engineering_internship\\src\\arquivos\\entrada"
-output_dir = "C:\\Users\\Usuario\\Downloads\\data_engineering_internship\\src\\arquivos\\saida"
+input_dir = r"C:\Users\Usuario\OneDrive\Área de Trabalho\data_engineering_internship\src\arquivos\entrada"
+output_dir = r"C:\Users\Usuario\OneDrive\Área de Trabalho\data_engineering_internship\src\arquivos\saida"
 
 converter_xlsx_para_csv(input_dir, output_dir)

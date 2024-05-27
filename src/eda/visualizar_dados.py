@@ -88,6 +88,5 @@ def analisar_dados(diretorio):
     print(f"\nResultados salvos em analise_exploratoria.xlsx")
 
 # Indicar diretório
-diretorio_dados = r"C:\\Users\\Usuario\Downloads\\data_engineering_internship\\src\\arquivos\\saida"
-
+diretorio_dados = r"C:\Users\Usuario\OneDrive\Área de Trabalho\data_engineering_internship\src\arquivos\saida"
 analisar_dados(diretorio_dados)

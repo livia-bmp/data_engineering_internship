@@ -13,7 +13,7 @@ def extrair_dados():
     """
     
     # Definido o caminho para download alterar conforme o usuário
-    diretorio_entrada = r"C:\Users\Usuario\Downloads\data_engineering_internship\src\arquivos\entrada"
+    diretorio_entrada = r"C:\Users\Usuario\OneDrive\Área de Trabalho\data_engineering_internship\src\arquivos\entrada"
 
     # Configura o Chrome e definir a pasta de download
     chrome_options = Options()
@@ -34,8 +34,8 @@ def extrair_dados():
     # driver.maximize_window()  # Você pode remover essa linha se não precisar maximizar
     time.sleep(4)
 
-    #inicialmente era pra ele fazer scroll down automaticamente até achar os botões em que precisa clicar
-    #nao foi possivel até o momento configurar por completo essa função por isso 
+    # Inicialmente era pra ele fazer scroll down automaticamente até achar os botões em que precisa clicar no site
+    # nao foi possivel até o momento configurar por completo essa função por isso 
     # É NECESSÁRIO QUANDO INICIAR O CHROME: `fazer scrolldown manualmente até os botões aparecerem na pagina do IBGE`
 
     # Função para clicar em um elemento

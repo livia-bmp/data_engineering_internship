@@ -74,7 +74,7 @@ def limpar_dados_xlsx(diretorio):
     return dataframes_limpos
 
 # Difinir diretório
-diretorio = r"C:\Users\Usuario\Downloads\data_engineering_internship\src\arquivos\entrada"
+diretorio = r"C:\Users\Usuario\OneDrive\Área de Trabalho\data_engineering_internship\src\arquivos\entrada"
 dataframes_limpos = limpar_dados_xlsx(diretorio)
 
 # Ao final indicar que foi concluido!
