@@ -7,12 +7,12 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 #extracao dos dados
 # Definido o caminho para download
-download_dir = r"C:\Users\Usuario\OneDrive\Área de Trabalho\data_engineering_internship\src\arquivos"
+diretorio_entrada = r"C:\Users\Usuario\OneDrive\Área de Trabalho\data_engineering_internship\src\arquivos\entrada"
 
 # Configura o Chrome e definir a pasta de download
 chrome_options = Options()
 chrome_options.add_experimental_option("prefs", {
-    "download.default_directory": download_dir,
+    "download.default_directory": diretorio_entrada,
     "download.prompt_for_download": False,  # Não pedir confirmação para download
     "download.directory_upgrade": True,
     "safebrowsing.enabled": True
